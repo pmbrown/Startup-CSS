@@ -1,0 +1,35 @@
+//  ------------------------------------------------------------
+//  Green
+//  ------------------------------------------------------------
+
+@import "variables/green";
+
+.green-1 {
+  @each $green-1, $value in $green-1 {
+    #{$green-1}: #{$value};
+  }
+}
+
+.green-2 {
+  @each $green-2, $value in $green-2 {
+    #{$green-2}: #{$value};
+  }
+}
+
+.green-3, .green {
+  @each $green-3, $value in $green-3 {
+    #{$green-3}: #{$value};
+  }
+}
+ 
+.green-4 {
+  @each $green-4, $value in $green-4 {
+    #{$green-4}: #{$value};
+  }
+}
+
+.green-5 {
+  @each $green-5, $value in $green-5 {
+    #{$green-5}: #{$value};
+  }
+}

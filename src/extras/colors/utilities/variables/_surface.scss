@@ -1,0 +1,35 @@
+//  ------------------------------------------------------------
+//  Color scheme surface colors
+//  ------------------------------------------------------------
+
+$surf-1: (
+  "--bg-color": var(--surf-1),
+  "--border-color": var(--surf-2),
+  "--bg-hover": var(--surf-2),
+) !default;
+
+$surf-2: (
+  "--bg-color": var(--surf-2),
+  "--border-color": var(--surf-3),
+  "--bg-hover": var(--surf-3),
+) !default;
+
+$surf-3: (
+  "--bg-color": var(--surf-3),
+  "--border-color": var(--surf-4),
+  "--bg-hover": var(--surf-4),
+) !default;
+
+$surf-4: (
+  "--bg-color": var(--surf-4),
+  "--border-color": var(--surf-5),
+  "--bg-hover": var(--surf-5),
+) !default;
+
+$surf-5: (
+  "--bg-color": var(--surf-5),
+  "--border-color": var(--surf-4),
+  "--bg-hover": var(--surf-4),
+) !default;
+
+

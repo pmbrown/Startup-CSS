@@ -1,0 +1,205 @@
+//  ------------------------------------------------------------
+//  Color variables
+//  ------------------------------------------------------------
+
+$gray-1-lgt:  97% !default;
+$gray-2-lgt:  91% !default;
+$gray-3-lgt:  85% !default;
+$gray-4-lgt:  75% !default;
+$gray-5-lgt:  67% !default;
+$gray-6-lgt:  57% !default;
+$gray-7-lgt:  45% !default;
+$gray-8-lgt:  36% !default;
+$gray-9-lgt:  25% !default;
+$gray-10-lgt: 15% !default;
+$gray-11-lgt: 11% !default;
+$gray-12-lgt: 3% !default;
+
+$mono: (
+  "--black": 0 0% 0%,
+  "--white": 0 0% 100%,
+  "--mono-hs": 0 0%,
+) !default;
+
+$grays: (
+  "gray-1":  0 0% #{$gray-1-lgt},
+  "gray-2":  0 0% #{$gray-2-lgt},
+  "gray-3":  0 0% #{$gray-3-lgt},
+  "gray-4":  0 0% #{$gray-4-lgt},
+  "gray-5":  0 0% #{$gray-5-lgt},
+  "gray-6":  0 0% #{$gray-6-lgt},
+  "gray-7":  0 0% #{$gray-7-lgt},
+  "gray-8":  0 0% #{$gray-8-lgt},
+  "gray-9":  0 0% #{$gray-9-lgt},
+  "gray-10": 0 0% #{$gray-10-lgt},
+  "gray-11": 0 0% #{$gray-11-lgt},
+  "gray-12": 0 0% #{$gray-12-lgt},
+) !default;
+
+$blue-hsl:        240 45% 50% !default;
+$blue-hs:         240 45% !default;
+$blue-1-lgt:      70% !default;
+$blue-2-lgt:      62% !default;
+$blue-3-lgt:      50% !default;
+$blue-4-lgt:      35% !default;
+$blue-5-lgt:      25% !default;
+
+$blue: (
+  "--blue": #{$blue-hsl},
+  "--blue-hs": #{$blue-hs},
+) !default;
+
+$blue-shades: (
+  "blue-1": 240 45% #{$blue-1-lgt},
+  "blue-2": 240 45% #{$blue-2-lgt},
+  "blue-3": 240 45% #{$blue-3-lgt},
+  "blue-4": 240 45% #{$blue-4-lgt},
+  "blue-5": 240 45% #{$blue-5-lgt},
+) !default;
+
+$green-hsl:        120 50% 30% !default;
+$green-hs:         120 50% !default;
+$green-1-lgt:      55% !default;
+$green-2-lgt:      40% !default;
+$green-3-lgt:      30% !default;
+$green-4-lgt:      22% !default;
+$green-5-lgt:      16% !default;
+
+$green: (
+  "--green": #{$green-hsl},
+  "--green-hs": #{$green-hs},
+) !default;
+
+$green-shades: (
+  "green-1": 120 50% #{$green-1-lgt},
+  "green-2": 120 50% #{$green-2-lgt},
+  "green-3": 120 50% #{$green-3-lgt},
+  "green-4": 120 50% #{$green-4-lgt},
+  "green-5": 120 50% #{$green-5-lgt},
+) !default;
+
+$red-hsl:        0 100% 35% !default;
+$red-hs:         0 100% !default;
+$red-1-lgt:      65% !default;
+$red-2-lgt:      45% !default;
+$red-3-lgt:      35% !default;
+$red-4-lgt:      25% !default;
+$red-5-lgt:      15% !default;
+
+$red: (
+  "--red": #{$red-hsl},
+  "--red-hs": #{$red-hs},
+) !default;
+
+$red-shades: (
+  "red-1": 0 100% #{$red-1-lgt},
+  "red-2": 0 100% #{$red-2-lgt},
+  "red-3": 0 100% #{$red-3-lgt},
+  "red-4": 0 100% #{$red-4-lgt},
+  "red-5": 0 100% #{$red-5-lgt},
+) !default;
+
+$yellow-hsl:        60 100% 52% !default;
+$yellow-hs:         60 100% !default;
+$yellow-1-lgt:      80% !default;
+$yellow-2-lgt:      69% !default;
+$yellow-3-lgt:      52% !default;
+$yellow-4-lgt:      47% !default;
+$yellow-5-lgt:      42% !default;
+
+$yellow: (
+  "--yellow": #{$yellow-hsl},
+  "--yellow-hs": #{$yellow-hs},
+) !default;
+
+$yellow-shades: (
+  "yellow-1": 60 100% #{$yellow-1-lgt},
+  "yellow-2": 60 100% #{$yellow-2-lgt},
+  "yellow-3": 60 100% #{$yellow-3-lgt},
+  "yellow-4": 60 100% #{$yellow-4-lgt},
+  "yellow-5": 60 100% #{$yellow-5-lgt},
+) !default;
+
+$orange-hsl:        24 100% 50% !default;
+$orange-hs:         24 100% !default;
+$orange-1-lgt:      70% !default;
+$orange-2-lgt:      60% !default;
+$orange-3-lgt:      50% !default;
+$orange-4-lgt:      41% !default;
+$orange-5-lgt:      34% !default;
+
+$orange: (
+  "--orange": #{$orange-hsl},
+  "--orange-hs": #{$orange-hs},
+) !default;
+
+$orange-shades: (
+  "orange-1": 24 100% #{$orange-1-lgt},
+  "orange-2": 24 100% #{$orange-2-lgt},
+  "orange-3": 24 100% #{$orange-3-lgt},
+  "orange-4": 24 100% #{$orange-4-lgt},
+  "orange-5": 24 100% #{$orange-5-lgt},
+) !default;
+
+$teal-hsl:        176 100% 28% !default;
+$teal-hs:         176 100% !default;
+$teal-1-lgt:      42% !default;
+$teal-2-lgt:      38% !default;
+$teal-3-lgt:      28% !default;
+$teal-4-lgt:      20% !default;
+$teal-5-lgt:      12% !default;
+
+$teal: (
+  "--teal": #{$teal-hsl},
+  "--teal-hs": #{$teal-hs},
+) !default;
+
+$teal-shades: (
+  "teal-1": 176 100% #{$teal-1-lgt},
+  "teal-2": 176 100% #{$teal-2-lgt},
+  "teal-3": 176 100% #{$teal-3-lgt},
+  "teal-4": 176 100% #{$teal-4-lgt},
+  "teal-5": 176 100% #{$teal-5-lgt},
+) !default;
+
+$pink-hsl:        300 100% 48% !default;
+$pink-hs:         300 100% !default;
+$pink-1-lgt:      80% !default;
+$pink-2-lgt:      70% !default;
+$pink-3-lgt:      48% !default;
+$pink-4-lgt:      35% !default;
+$pink-5-lgt:      25% !default;
+
+$pink: (
+  "--pink": #{$pink-hsl},
+  "--pink-hs": #{$pink-hs},
+) !default;
+
+$pink-shades: (
+  "pink-1": 300 100% #{$pink-1-lgt},
+  "pink-2": 300 100% #{$pink-2-lgt},
+  "pink-3": 300 100% #{$pink-3-lgt},
+  "pink-4": 300 100% #{$pink-4-lgt},
+  "pink-5": 300 100% #{$pink-5-lgt},
+) !default;
+
+$cyan-hsl:        180 95% 55% !default;
+$cyan-hs:         180 95% !default;
+$cyan-1-lgt:      83% !default;
+$cyan-2-lgt:      75% !default;
+$cyan-3-lgt:      55% !default;
+$cyan-4-lgt:      46% !default;
+$cyan-5-lgt:      42% !default;
+
+$cyan: (
+  "--cyan": #{$cyan-hsl},
+  "--cyan-hs": #{$cyan-hs},
+) !default;
+
+$cyan-shades: (
+  "cyan-1": 180 95% #{$cyan-1-lgt},
+  "cyan-2": 180 95% #{$cyan-2-lgt},
+  "cyan-3": 180 95% #{$cyan-3-lgt},
+  "cyan-4": 180 95% #{$cyan-4-lgt},
+  "cyan-5": 180 95% #{$cyan-5-lgt},
+) !default;

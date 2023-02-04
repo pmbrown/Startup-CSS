@@ -1,0 +1,14 @@
+//  ------------------------------------------------------------
+//  Teal
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $teal, $value in $teal {
+    #{$teal}: #{$value};
+  }
+  @each $teal-shades, $value in $teal-shades {
+    --#{$teal-shades}: hsl(#{$value});
+  }
+}

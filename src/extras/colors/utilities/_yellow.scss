@@ -1,0 +1,35 @@
+//  ------------------------------------------------------------
+//  Yellow
+//  ------------------------------------------------------------
+
+@import "variables/yellow";
+
+.yellow-1 {
+  @each $yellow-1, $value in $yellow-1 {
+    #{$yellow-1}: #{$value};
+  }
+}
+
+.yellow-2 {
+  @each $yellow-2, $value in $yellow-2 {
+    #{$yellow-2}: #{$value};
+  }
+}
+
+.yellow-3, .yellow {
+  @each $yellow-3, $value in $yellow-3 {
+    #{$yellow-3}: #{$value};
+  }
+}
+ 
+.yellow-4 {
+  @each $yellow-4, $value in $yellow-4 {
+    #{$yellow-4}: #{$value};
+  }
+}
+
+.yellow-5 {
+  @each $yellow-5, $value in $yellow-5 {
+    #{$yellow-5}: #{$value};
+  }
+}

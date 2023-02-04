@@ -1,0 +1,49 @@
+//  ------------------------------------------------------------
+//  Utilities
+//  ------------------------------------------------------------
+
+.bg, .bg-border {
+  color: var(--color);
+  background-color: var(--bg-color);
+  --ico-color: var(--color);
+}
+
+.bg-border {
+  border: 1px solid var(--border-color);
+}
+
+.txt {
+  color: var(--bg-color);
+}
+
+.txt:before, .txt:after {
+  --ico-color: var(--bg-color);
+}
+
+.white {
+  --color: #000;
+  --bg-color: #fff;
+  --border-color: #ccc;
+  --bg-hover: #ddd;
+  --focus-hsl: var(--text-hsl);
+}
+
+.black {
+  --color: #fff;
+  --bg-color: #000;
+  --border-color: #222;
+  --bg-hover: #333;
+  --focus-hsl: var(--text-hsl);
+}
+
+// Utility colors
+@import "utilities/surf";
+// @import "utilities/grays";
+@import "utilities/blue";
+@import "utilities/green";
+@import "utilities/red";
+@import "utilities/yellow";
+@import "utilities/pink";
+@import "utilities/orange";
+@import "utilities/teal";
+@import "utilities/cyan";

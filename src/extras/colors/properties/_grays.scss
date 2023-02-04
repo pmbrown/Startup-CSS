@@ -1,0 +1,14 @@
+//  ------------------------------------------------------------
+//  Grays
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $mono, $value in $mono {
+    #{$mono}: #{$value};
+  }
+  @each $grays, $value in $grays {
+    --#{$grays}: hsl(#{$value});
+  } 
+}

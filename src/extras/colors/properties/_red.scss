@@ -1,0 +1,14 @@
+//  ------------------------------------------------------------
+//  Red
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $red, $value in $red {
+    #{$red}: #{$value};
+  }
+  @each $red-shades, $value in $red-shades {
+    --#{$red-shades}: hsl(#{$value});
+  }
+}

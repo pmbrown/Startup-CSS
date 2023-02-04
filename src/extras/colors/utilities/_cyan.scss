@@ -1,0 +1,35 @@
+//  ------------------------------------------------------------
+//  Cyan
+//  ------------------------------------------------------------
+
+@import "variables/cyan";
+
+.cyan-1 {
+  @each $cyan-1, $value in $cyan-1 {
+    #{$cyan-1}: #{$value};
+  }
+}
+
+.cyan-2 {
+  @each $cyan-2, $value in $cyan-2 {
+    #{$cyan-2}: #{$value};
+  }
+}
+
+.cyan-3, .cyan {
+  @each $cyan-3, $value in $cyan-3 {
+    #{$cyan-3}: #{$value};
+  }
+}
+ 
+.cyan-4 {
+  @each $cyan-4, $value in $cyan-4 {
+    #{$cyan-4}: #{$value};
+  }
+}
+
+.cyan-5 {
+  @each $cyan-5, $value in $cyan-5 {
+    #{$cyan-5}: #{$value};
+  }
+}

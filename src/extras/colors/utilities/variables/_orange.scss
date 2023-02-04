@@ -1,0 +1,43 @@
+//  ------------------------------------------------------------
+//  Orange color utilities
+//  ------------------------------------------------------------
+
+$orange-1: (
+  "--color": #000,
+  "--bg-color": var(--orange-1),
+  "--border-color": var(--orange-2),
+  "--bg-hover": var(--orange-2),
+  "--focus-hsl": var(--orange),
+) !default;
+
+$orange-2: (
+  "--color": #000,
+  "--bg-color": var(--orange-2),
+  "--border-color": var(--orange-3),
+  "--bg-hover": var(--orange-1),
+  "--focus-hsl": var(--orange),
+) !default;
+
+$orange-3: (
+  "--color": #000,
+  "--bg-color": var(--orange-3),
+  "--border-color": var(--orange-4),
+  "--bg-hover": var(--orange-4),
+  "--focus-hsl": var(--orange),
+) !default;
+
+$orange-4: (
+  "--color": #000,
+  "--bg-color": var(--orange-4),
+  "--border-color": var(--orange-5),
+  "--bg-hover": var(--orange-5),
+  "--focus-hsl": var(--orange),
+) !default;
+
+$orange-5: (
+  "--color": #fff,
+  "--bg-color": var(--orange-5),
+  "--border-color": var(--orange-4),
+  "--bg-hover": var(--orange-4),
+  "--focus-hsl": var(--orange),
+) !default;

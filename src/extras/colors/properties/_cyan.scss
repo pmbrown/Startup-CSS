@@ -1,0 +1,14 @@
+//  ------------------------------------------------------------
+//  Cyan
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $cyan, $value in $cyan {
+    #{$cyan}: #{$value};
+  }
+  @each $cyan-shades, $value in $cyan-shades {
+    --#{$cyan-shades}: hsl(#{$value});
+  }
+}

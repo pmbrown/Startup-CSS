@@ -1,0 +1,35 @@
+//  ------------------------------------------------------------
+//  Blue class utilities
+//  ------------------------------------------------------------
+
+@import "variables/blue";
+
+.blue-1 {
+  @each $blue-1, $value in $blue-1 {
+    #{$blue-1}: #{$value};
+  }
+}
+
+.blue-2 {
+  @each $blue-2, $value in $blue-2 {
+    #{$blue-2}: #{$value};
+  }
+}
+
+.blue-3, .blue {
+  @each $blue-3, $value in $blue-3 {
+    #{$blue-3}: #{$value};
+  }
+}
+ 
+.blue-4 {
+  @each $blue-4, $value in $blue-4 {
+    #{$blue-4}: #{$value};
+  }
+}
+
+.blue-5 {
+  @each $blue-5, $value in $blue-5 {
+    #{$blue-5}: #{$value};
+  }
+}

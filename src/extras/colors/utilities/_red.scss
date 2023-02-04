@@ -1,0 +1,35 @@
+//  ------------------------------------------------------------
+//  Red
+//  ------------------------------------------------------------
+
+@import "variables/red";
+
+.red-1 {
+  @each $red-1, $value in $red-1 {
+    #{$red-1}: #{$value};
+  }
+}
+
+.red-2 {
+  @each $red-2, $value in $red-2 {
+    #{$red-2}: #{$value};
+  }
+}
+
+.red-3, .red {
+  @each $red-3, $value in $red-3 {
+    #{$red-3}: #{$value};
+  }
+}
+ 
+.red-4 {
+  @each $red-4, $value in $red-4 {
+    #{$red-4}: #{$value};
+  }
+}
+
+.red-5 {
+  @each $red-5, $value in $red-5 {
+    #{$red-5}: #{$value};
+  }
+}

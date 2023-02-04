@@ -1,0 +1,36 @@
+//  ------------------------------------------------------------
+//  Teal
+//  ------------------------------------------------------------
+
+@import "variables/teal";
+
+
+.teal-1 {
+  @each $teal-1, $value in $teal-1 {
+    #{$teal-1}: #{$value};
+  }
+}
+
+.teal-2 {
+  @each $teal-2, $value in $teal-2 {
+    #{$teal-2}: #{$value};
+  }
+}
+
+.teal-3, .teal {
+  @each $teal-3, $value in $teal-3 {
+    #{$teal-3}: #{$value};
+  }
+}
+ 
+.teal-4 {
+  @each $teal-4, $value in $teal-4 {
+    #{$teal-4}: #{$value};
+  }
+}
+
+.teal-5 {
+  @each $teal-5, $value in $teal-5 {
+    #{$teal-5}: #{$value};
+  }
+}

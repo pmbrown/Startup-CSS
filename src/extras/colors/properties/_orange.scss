@@ -1,0 +1,14 @@
+//  ------------------------------------------------------------
+//  Orange
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $orange, $value in $orange {
+    #{$orange}: #{$value};
+  }
+  @each $orange-shades, $value in $orange-shades {
+    --#{$orange-shades}: hsl(#{$value});
+  }
+}

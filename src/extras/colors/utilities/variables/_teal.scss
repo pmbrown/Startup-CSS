@@ -1,0 +1,43 @@
+//  ------------------------------------------------------------
+//  Teal color utilities
+//  ------------------------------------------------------------
+
+$teal-1: (
+  "--color": #000,
+  "--bg-color": var(--teal-1),
+  "--border-color": var(--teal-2),
+  "--bg-hover": var(--teal-2),
+  "--focus-hsl": var(--teal),
+) !default;
+
+$teal-2: (
+  "--color": #000,
+  "--bg-color": var(--teal-2),
+  "--border-color": var(--teal-3),
+  "--bg-hover": var(--teal-1),
+  "--focus-hsl": var(--teal),
+) !default;
+
+$teal-3: (
+  "--color": #000,
+  "--bg-color": var(--teal-3),
+  "--border-color": var(--teal-4),
+  "--bg-hover": var(--teal-4),
+  "--focus-hsl": var(--teal),
+) !default;
+
+$teal-4: (
+  "--color": #fff,
+  "--bg-color": var(--teal-4),
+  "--border-color": var(--teal-5),
+  "--bg-hover": var(--teal-5),
+  "--focus-hsl": var(--teal),
+) !default;
+
+$teal-5: (
+  "--color": #fff,
+  "--bg-color": var(--teal-5),
+  "--border-color": var(--teal-4),
+  "--bg-hover": var(--teal-4),
+  "--focus-hsl": var(--teal),
+) !default;

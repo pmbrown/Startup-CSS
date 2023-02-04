@@ -1,0 +1,530 @@
+//  ------------------------------------------------------------
+//  Startup-CSS v1
+//  ------------------------------------------------------------
+
+//  ------------------------------------------------------------
+//  Color scheme variables
+//  ------------------------------------------------------------
+
+:where(html) {
+  color-scheme: light;
+  --text: #000;
+  --text-hsl: 0 0% 0%;
+  --link: hsl(240 45% 50%);
+  --link-hover: hsl(240 45% 65%);
+  --surf-1: #fff;
+  --surf-2: hsl(0 0% 97%);
+  --surf-3: hsl(0 0% 93%);
+  --surf-4: hsl(0 0% 85%);
+  --surf-5: hsl(0 0% 75%);
+  --body-bg: hsl(0 0% 99%);
+  --mode-svg: var(--sun);
+}
+
+:where([data-dark=true]) {
+  color-scheme: dark;
+  --text: #fff;
+  --text-hsl: 0 0% 100%;
+  --link: hsl(240 45% 62%);
+  --link-hover: hsl(240 45% 70%);
+  --surf-1: #000;
+  --surf-2: hsl(0 0% 5%);
+  --surf-3: hsl(0 0% 9%);
+  --surf-4: hsl(0 0% 15%);
+  --surf-5: hsl(0 0% 25%);
+  --body-bg: hsl(0 0% 4%);
+  --mode-svg: var(--moon);
+}
+
+//  ------------------------------------------------------------
+//  Resets
+//  ------------------------------------------------------------
+
+* { 
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+//  ------------------------------------------------------------
+//  General typography
+//  ------------------------------------------------------------
+
+:where(html, body, h1, h2, h3, h4, h5, h6) {
+  color: var(--color, revert);
+  font-size: var(--fs);
+  font-weight: var(--fw);
+  line-height: var(--lh);
+}
+
+:where(html) {
+  --body: .938rem;
+  --sml: .813rem;
+  --xs: .75rem;
+  --h1: 1.95rem;
+  --h2: 1.5rem;
+  --h3: 1.3rem;
+  --h4: 1.2rem;
+  --h5: 1.1rem;
+  --h6: 1rem;
+  --color: var(--text);
+  --fs: clamp(100%, 50% + 0.666vw, 150%);
+  --ico-color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-bg);
+  height: 100%;
+}
+
+:where(body) {
+  --fs: var(--body);
+  --fw: normal;
+  --lh: 1.5;
+}
+
+:where(a) {
+  color: var(--link, initial);
+  overflow-wrap: break-word;
+  text-decoration-thickness: from-font;
+  text-underline-offset: .075em;
+}
+
+:where(a):is(:hover, :focus, :active) {
+  color: var(--link-hover, initial);
+  text-decoration: none;
+}
+
+:where(a):focus {
+  outline-offset: .175em;
+  outline-color: var(--link-hover, initial);
+}
+
+:where(h1, h2, h3, h4, h5, h6) a {
+  text-decoration: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl, address) {
+  margin-block-end: var(--mb);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  --fw: bold;
+  --mb: .75rem;
+}
+
+:where(h1) {
+  --fs: var(--h1);
+  --lh: 1.18;
+}
+
+:where(h2) {
+  --fs: var(--h2);
+  --lh: 1.2;
+}
+
+:where(h3) {
+  --fs: var(--h3);
+  --lh: 1.25;
+}
+
+:where(h4) {
+  --fs: var(--h4);
+  --lh: 1.3;
+}
+
+:where(h5) {
+  --fs: var(--h5);
+  --lh: 1.3;
+}
+
+:where(h6) {
+  --fs: var(--h6);
+  --lh: 1.4;
+}
+
+:where(bold, strong) {
+  font-weight: bold;
+}
+
+:where(p, ol, ul, dl, address) {
+  --mb: 1rem;
+}
+
+:where(ol, ul) {
+  --pl: 1rem;
+  padding-inline-start: var(--pl);
+}
+
+:where(ol ol, ul ul, ol ul, ul ol, dl dl) {
+  --mb: 0;
+}
+
+:where(dt) {
+  font-weight: bold;
+}
+
+:where(dd) {
+  margin-inline-start: 1rem;
+}
+
+//  ------------------------------------------------------------
+//  Inline elements
+//  ------------------------------------------------------------
+
+:where(abbr[title]) {
+  border: none;
+  cursor: help;
+}
+
+:where(small) {
+  --fs: var(--sm); 
+  font-size: var(--fs);
+}
+
+:where(sup, sub) {
+  font-size: var(--xs);
+}
+
+:where(mark) {
+  color: marktext;
+}
+
+:where(code) {
+  color: var(--link, initial);
+  word-wrap: break-word;
+}
+
+a > :where(code) {
+  color: inherit;
+}
+
+:where(pre, code, kbd, samp) {
+  font-family: Consolas, SFMono-Regular, monospace;
+}
+
+:where(kbd) {
+  padding: .1rem .2rem;
+  background-color: var(--surf-3);
+  border-radius: .25rem;
+}
+
+//  ------------------------------------------------------------
+//  Block elements
+//  ------------------------------------------------------------
+
+:where(pre) {
+  display: block;
+  overflow: auto;
+  background-color: var(--surf-2);
+  border: 1px solid var(--surf-3, #ccc);
+  padding: .5rem;
+  margin-block-end: 1rem;
+}
+
+:where(pre) code {
+  word-break: normal;
+}
+
+:where(address) {
+  font-style: normal;
+}
+
+:where(blockquote) {
+  font-size: 1.1rem;
+  border: 1px solid var(--surf-3, #eee);
+  border-inline-start-width: 10px;
+  padding-block: .5rem;
+  padding-inline: 1rem;
+  margin-block-end: 1rem;
+}
+
+:where(blockquote) p {
+  margin-block-end: 0;
+}
+
+:where(details) {
+  margin-block-end: 1rem;
+}
+
+:where(summary) {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+:where(details[open] summary) {
+  margin-block-end: .5rem;
+}
+
+:where(hr) {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: none;
+  border-block-start: 1px solid var(--surf-3, #aaa);
+  margin-block-end: 1rem;
+}
+
+:where(figure) {
+  margin: 0;
+  margin-block-end: 1rem;
+}
+
+:where(figcaption) {
+  font-size: .813rem;
+  padding-block: .5rem;
+  padding-inline: .75rem;
+  background-color: var(--surf-2, #eee);
+}
+
+:where(img, svg, video, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, svg) { 
+  max-width: 100%;
+}
+
+:where(iframe) {
+  border: 0;
+}
+
+//  ------------------------------------------------------------
+//  Forms and buttons
+//  ------------------------------------------------------------
+
+:where(input, button, select, optgroup, textarea, [role=button], .btn) {
+--color: inherit;
+--fs: inherit;
+--lh: inherit;
+--pad-block: .25rem;
+--pad-inline: .5rem;
+--bg-color: inherit;
+--bg-hover: var(--surf-2);
+--border-color: var(--surf-5, #bbb);
+--focus-shadow: 0 0 0 0.1rem hsla(var(--focus-hsl) / 0.5);
+--ico-color: var(--color);
+  color: var(--color);
+  font-size: var(--fs);
+  line-height: var(--lh);
+  font-family: inherit;
+  padding-block: var(--pad-block);
+  padding-inline: var(--pad-inline);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+:where(input, button, select, optgroup, textarea, [role=button]):disabled,
+:where([aria-disabled=true]) {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+:where(button, [type=button], [type=submit], [type=reset]) {
+  cursor: pointer;
+}
+
+:where([role=button], .btn) {
+  display: inline-block;
+  text-decoration: none;
+}
+
+:where(button, [type=button], [type=submit], [type=reset], [role=button], .btn):is(:hover, :focus, :active) {
+  background-color: var(--bg-hover);
+  outline: none;
+}
+
+:where(button, [type=button], [type=submit], [type=reset], [role=button], .btn):is(:focus) {
+--focus-hsl: var(--text-hsl);
+  box-shadow: var(--focus-shadow);
+}
+
+:where([role=button], .btn):is(:hover,:focus, :active) {
+  color: var(--color);
+}
+
+:where(textarea) {
+  resize: vertical;
+}
+
+:where(select) {
+  --color: var(--text);
+  --bg-color: var(--body-bg, background);
+  word-wrap: normal;
+  padding: .45rem .25rem;
+}
+
+:where(fieldset, legend) {
+  border: 1px solid var(--surf-4);
+}
+
+:where(fieldset) {
+  margin-block-end: 1rem;  
+}
+
+:where(legend) {
+  margin-block-end: .25rem;
+  padding: .15rem .5rem;
+}
+
+:where([type=color]) {
+  cursor: pointer;
+  padding: 0;
+}
+
+:where(input[type=color])::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+:where(input[type=color i])::-webkit-color-swatch {
+  border-color: var(--surf-3);
+}
+
+//  ------------------------------------------------------------
+//  Tables
+//  ------------------------------------------------------------
+
+:where(table) {
+--pad-block: .25rem;
+--pad-inline: .5rem;
+--bg-hsl: var(--text-hsl);
+--border-color: hsla(var(--bg-hsl) / .1);
+--border-width: 0.0125rem;
+--bg-hover: hsla(var(--bg-hsl) / .035);
+--bg-stripes: hsla(var(--bg-hsl) / .01);
+--th-row: hsla(var(--bg-hsl) / .06);
+--mb: 1rem;
+  caption-side: top;
+  border-collapse: collapse;
+  width: 100%;
+  margin-block-end: var(--mb);
+  font-variant-numeric: tabular-nums;
+}
+
+:where(caption) {
+  font-weight: bold;
+  text-align: left;
+  padding-block-end: .5rem;
+}
+
+:where(th) {
+  font-weight: bold;
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+:where(thead, tbody, tfoot, tr, td, th) {
+  border: var(--border-width) solid var(--border-color);
+  vertical-align: top;
+}
+
+:where(tbody, thead) th, td {
+  padding-block: var(--pad-block);
+  padding-inline: var(--pad-inline);
+  white-space: nowrap;
+}
+
+:where(thead) th {
+  background-color: var(--th-row);
+}
+
+:where(thead) th:last-child {
+  border-inline-end-color: var(--border-color);
+}
+
+//  ------------------------------------------------------------
+//  Table striped and hover utilities
+//  ------------------------------------------------------------
+
+:where(.table-striped tr):nth-child(even),
+:where(.table-combo tr):nth-child(even) {
+  background-color: var(--bg-stripes);
+}
+
+:where(.table-hover tbody tr):hover,
+:where(.table-combo tbody tr):hover {
+  background-color: var(--bg-hover);
+}
+
+//  ------------------------------------------------------------
+//  Colored tables
+//  ------------------------------------------------------------
+.table-blue {
+  --bg-hsl: var(--blue-hsl);
+}
+
+.table-green {
+  --bg-hsl: var(--green-hsl);
+}
+
+.table-red {
+  --bg-hsl: var(--red-hsl);
+}
+
+//  ------------------------------------------------------------
+//  Table <div> wrapper (see method below)
+//  ------------------------------------------------------------
+:where([role="region"][aria-labelledby][tabindex]) {
+  --mb: 1rem;
+  overflow-x: auto;
+  margin-block-end: var(--mb);
+}
+
+:where([role="region"][aria-labelledby][tabindex]):focus {
+  --focus: var(--text-hsl);
+  outline: 3px solid hsla(var(--focus) / 0.5);
+}
+
+:where([role="region"][aria-labelledby][tabindex] table) {
+  --mb: 0;
+}
+
+//  ------------------------------------------------------------
+//  Wrapper method, alter ARIA and ID name for each table
+//  ------------------------------------------------------------
+//  <div role="region" aria-labelledby="Caption1" tabindex="0">
+//  <table class="table-combo">
+//  <caption id="Caption1">Table caption</caption>
+//    table-data
+//  </table>
+//  </div>
+
+//  ------------------------------------------------------------
+//  Visual styles
+//  ------------------------------------------------------------
+
+@media (prefers-reduced-motion: no-preference) { 
+  :where(html) { scroll-behavior: smooth; }
+}
+
+.hidden {
+  display: none;
+}
+
+.vis-hidden,
+.vis-hidden-focus:not(:focus):not(:focus-within) {
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+}
+
+.vis-hidden-focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  color: var(--link);
+  font-weight: bold;
+  text-decoration: underline;
+  width: 100%;
+  display: block;
+  padding: 1rem 2rem;
+  outline: none;
+  background-color: var(--body-bg);
+  border-bottom: 1px solid var(--text);
+}

@@ -1,0 +1,82 @@
+//  ------------------------------------------------------------
+//  Gray class utilities
+//  ------------------------------------------------------------
+
+@import "variables/gray";
+
+.gray-1, .gray-2, .gray-3, .gray-4, .gray-5, .gray-6, .gray-7, .gray-8, .gray-9, .gray-10, .gray-11, .gray-12, {
+--ico-color: var(--color);
+--focus-hsl: var(--text-hsl);
+}
+
+.gray-1 {
+  @each $gray-1, $value in $gray-1 {
+    #{$gray-1}: #{$value};
+  }
+}
+
+.gray-2 {
+  @each $gray-2, $value in $gray-2 {
+    #{$gray-2}: #{$value};
+  }
+}
+
+.gray-3 {
+  @each $gray-3, $value in $gray-3 {
+    #{$gray-3}: #{$value};
+  }
+}
+
+.gray-4 {
+  @each $gray-4, $value in $gray-4 {
+    #{$gray-4}: #{$value};
+  }
+}
+
+.gray-5 {
+  @each $gray-5, $value in $gray-5 {
+    #{$gray-5}: #{$value};
+  }
+}
+
+.gray-6 {
+  @each $gray-6, $value in $gray-6 {
+    #{$gray-6}: #{$value};
+  }
+}
+
+.gray-7 {
+  @each $gray-7, $value in $gray-7 {
+    #{$gray-7}: #{$value};
+  }
+}
+
+.gray-8 {
+  @each $gray-8, $value in $gray-8 {
+    #{$gray-8}: #{$value};
+  }
+}
+
+.gray-9 {
+  @each $gray-9, $value in $gray-9 {
+    #{$gray-9}: #{$value};
+  }
+}
+
+.gray-10 {
+  @each $gray-10, $value in $gray-10 {
+    #{$gray-10}: #{$value};
+  }
+}
+
+.gray-11 {
+  @each $gray-11, $value in $gray-11 {
+    #{$gray-11}: #{$value};
+  }
+}
+
+.gray-12 {
+  @each $gray-12, $value in $gray-12 {
+    #{$gray-12}: #{$value};
+  }
+}

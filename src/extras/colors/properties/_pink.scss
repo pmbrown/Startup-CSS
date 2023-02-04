@@ -1,0 +1,14 @@
+//  ------------------------------------------------------------
+//  Pink
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $pink, $value in $pink {
+    #{$pink}: #{$value};
+  }
+  @each $pink-shades, $value in $pink-shades {
+    --#{$pink-shades}: hsl(#{$value});
+  }
+}

@@ -1,0 +1,36 @@
+//  ------------------------------------------------------------
+//  Orange
+//  ------------------------------------------------------------
+
+@import "variables/orange";
+
+
+.orange-1 {
+  @each $orange-1, $value in $orange-1 {
+    #{$orange-1}: #{$value};
+  }
+}
+
+.orange-2 {
+  @each $orange-2, $value in $orange-2 {
+    #{$orange-2}: #{$value};
+  }
+}
+
+.orange-3, .orange {
+  @each $orange-3, $value in $orange-3 {
+    #{$orange-3}: #{$value};
+  }
+}
+ 
+.orange-4 {
+  @each $orange-4, $value in $orange-4 {
+    #{$orange-4}: #{$value};
+  }
+}
+
+.orange-5 {
+  @each $orange-5, $value in $orange-5 {
+    #{$orange-5}: #{$value};
+  }
+}

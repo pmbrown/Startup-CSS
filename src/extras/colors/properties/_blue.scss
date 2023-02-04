@@ -1,0 +1,15 @@
+//  ------------------------------------------------------------
+//  Blue
+//  ------------------------------------------------------------
+
+@import "color-variables";
+
+:where(html) {
+  @each $blue, $value in $blue {
+    #{$blue}: #{$value};
+  }
+    
+  @each $blue-shades, $value in $blue-shades {
+    --#{$blue-shades}: hsl(#{$value});
+  }
+}

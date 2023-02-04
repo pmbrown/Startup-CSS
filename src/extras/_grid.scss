@@ -1,0 +1,153 @@
+//  ------------------------------------------------------------
+//  Grid
+//  ------------------------------------------------------------
+
+@import "grid-variables";
+
+// Custom property variables
+:where(html) {  
+  @each $fraction-grid, $value in $fraction-grid {
+    --#{$fraction-grid}: #{$value};
+  }
+}
+
+// Grid base
+.grid, .grid-inline {
+  grid-template-columns: var(--gtc);
+  margin-block-end: var(--mb);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-inline {
+  display: inline-grid;
+}
+
+// Utility classes
+// Base size
+@each $fraction-grid, $value in $fraction-grid {
+.#{$fraction-grid} {
+  --gtc: var(--#{$fraction-grid});        
+  }
+}
+
+@each $gaps, $value in $gaps {
+.#{$gaps} {
+  gap: #{$value};        
+  }
+}
+
+// Responsive sizes
+// 1400
+@media screen and (max-width: $bp1400) {
+  @each $fraction-grid, $value in $fraction-grid {
+  .#{$fraction-grid}-xxl {
+    --gtc: var(--#{$fraction-grid});        
+    }
+  }
+  @each $gaps, $value in $gaps {
+  .#{$gaps}-xxl {
+    gap: #{$value};        
+    }
+  }
+}
+
+// 1200
+@media screen and (max-width: $bp1200) { 
+  @each $fraction-grid, $value in $fraction-grid {
+  .#{$fraction-grid}-xl {
+    --gtc: var(--#{$fraction-grid});        
+    }
+  }
+  @each $gaps, $value in $gaps {
+  .#{$gaps}-xl {
+    gap: #{$value};        
+    }
+  }
+}
+
+// 1024
+@media screen and (max-width: $bp1024) { 
+  @each $fraction-grid, $value in $fraction-grid {
+  .#{$fraction-grid}-lg {  
+    --gtc: var(--#{$fraction-grid});        
+    }
+  }
+  @each $gaps, $value in $gaps {
+  .#{$gaps}-lg {
+    gap: #{$value};        
+    }
+  }
+}
+
+// 800
+@media screen and (max-width: $bp800) {  
+  @each $fraction-grid, $value in $fraction-grid {
+  .#{$fraction-grid}-md {  
+    --gtc: var(--#{$fraction-grid});        
+    }
+  }
+  @each $gaps, $value in $gaps {
+  .#{$gaps}-md {
+    gap: #{$value};        
+    }
+  }
+}
+
+// 576
+@media screen and (max-width: $bp576) { 
+  @each $fraction-grid, $value in $fraction-grid {
+  .#{$fraction-grid}-sm {  
+    --gtc: var(--#{$fraction-grid});        
+    }
+  }
+  @each $gaps, $value in $gaps {
+  .#{$gaps}-sm {
+    gap: #{$value};        
+    }
+  }
+}
+
+// 480
+@media screen and (max-width: $bp480) {
+  @each $fraction-grid, $value in $fraction-grid {
+  .#{$fraction-grid}-xs {  
+    --gtc: var(--#{$fraction-grid});        
+    }
+  }
+  @each $gaps, $value in $gaps {
+  .#{$gaps}-xs {
+    gap: #{$value};        
+    }
+  }
+}
+
+// 360
+//@media screen and (max-width: $bp360) {
+//  @each $fraction-grid, $value in $fraction-grid {
+//  .#{$fraction-grid}-xxs {  
+//    --gtc: var(--#{$fraction-grid});        
+//    }
+//  }
+//  @each $gaps, $value in $gaps {
+//  .#{$gaps}-xxs {
+//    gap: #{$value};        
+//    }
+//  }
+// }
+
+// 320
+// @media screen and (max-width: $bp320) {  
+//  @each $fraction-grid, $value in $fraction-grid {
+//  .#{$fraction-grid}-xxxs {  
+//    --gtc: var(--#{$fraction-grid});        
+//    }
+//  }
+//  @each $gaps, $value in $gaps {
+//  .#{$gaps}-xxxs {
+//    gap: #{$value};        
+//    }
+//  }
+// }

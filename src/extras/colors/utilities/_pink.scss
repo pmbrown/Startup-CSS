@@ -1,0 +1,36 @@
+//  ------------------------------------------------------------
+//  Pink
+//  ------------------------------------------------------------
+
+@import "variables/pink";
+
+
+.pink-1 {
+  @each $pink-1, $value in $pink-1 {
+    #{$pink-1}: #{$value};
+  }
+}
+
+.pink-2 {
+  @each $pink-2, $value in $pink-2 {
+    #{$pink-2}: #{$value};
+  }
+}
+
+.pink-3, .pink {
+  @each $pink-3, $value in $pink-3 {
+    #{$pink-3}: #{$value};
+  }
+}
+ 
+.pink-4 {
+  @each $pink-4, $value in $pink-4 {
+    #{$pink-4}: #{$value};
+  }
+}
+
+.pink-5 {
+  @each $pink-5, $value in $pink-5 {
+    #{$pink-5}: #{$value};
+  }
+}

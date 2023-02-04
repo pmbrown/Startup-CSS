@@ -1,0 +1,65 @@
+//  ------------------------------------------------------------
+//  All colors
+//  ------------------------------------------------------------
+//  @each $grays, $value in $grays {
+//    --#{$grays}: hsl(#{$value});
+//  } 
+
+
+@import "color-variables";
+
+:where(html) {    
+  @each $mono, $value in $mono {
+    #{$mono}: #{$value};
+  }   
+  @each $blue, $value in $blue {
+    #{$blue}: #{$value};
+  }
+  @each $blue-shades, $value in $blue-shades {
+    --#{$blue-shades}: hsl(#{$value});
+  }
+  @each $green, $value in $green {
+    #{$green}: #{$value};
+  }
+  @each $green-shades, $value in $green-shades {
+    --#{$green-shades}: hsl(#{$value});
+  }
+  @each $red, $value in $red {
+    #{$red}: #{$value};
+  }
+  @each $red-shades, $value in $red-shades {
+    --#{$red-shades}: hsl(#{$value});
+  }
+  @each $yellow, $value in $yellow {
+    #{$yellow}: #{$value};
+  }
+  @each $yellow-shades, $value in $yellow-shades {
+    --#{$yellow-shades}: hsl(#{$value});
+  }
+  @each $orange, $value in $orange {
+    #{$orange}: #{$value};
+  }
+  @each $orange-shades, $value in $orange-shades {
+    --#{$orange-shades}: hsl(#{$value});
+  }
+  @each $teal, $value in $teal {
+    #{$teal}: #{$value};
+  }
+  @each $teal-shades, $value in $teal-shades {
+    --#{$teal-shades}: hsl(#{$value});
+  }
+  @each $pink, $value in $pink {
+    #{$pink}: #{$value};
+  }
+  @each $pink-shades, $value in $pink-shades {
+    --#{$pink-shades}: hsl(#{$value});
+  }
+  @each $cyan, $value in $cyan {
+    #{$cyan}: #{$value};
+  }
+  @each $cyan-shades, $value in $cyan-shades {
+    --#{$cyan-shades}: hsl(#{$value});
+  }
+}
+
+ 

@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en-au">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Startup-CSS | Phil Brown</title>
+<meta name="description" content="Startup-CSS is a base style sheet document setup for website theme development.">
+<meta name="author" content="Phil Brown">
+<meta name="twitter:site" content="@philbrownweb">
+<link rel="canonical" href="http://pmbrown.github.io/Startup-CSS/">
+<script>const storageKey="theme-preference",onClick=()=>{theme.value="false"===theme.value?"true":"false",setPreference()},getColorPreference=()=>localStorage.getItem(storageKey)?localStorage.getItem(storageKey):window.matchMedia("(prefers-color-scheme: dark)").matches?"true":"false",setPreference=()=>{localStorage.setItem(storageKey,theme.value),reflectPreference()},reflectPreference=()=>{document.firstElementChild.setAttribute("data-dark",theme.value),document.querySelector('[aria-label="Dark mode"]')?.setAttribute("aria-pressed",theme.value)},theme={value:getColorPreference()};reflectPreference(),window.onload=()=>{reflectPreference(),document.querySelector('[aria-label="Dark mode"]').addEventListener("click",onClick)},window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:e})=>{theme.value=e?"true":"false",setPreference()});</script>
+<link rel="stylesheet" href="/Startup-CSS/assets/css/startup.css">
+<style>.demo,footer{font-size:var(--xs)}body{width:100%;max-width:800px;margin-inline:auto;padding-inline:1rem;padding-block-end:1rem}@media screen and (min-width:1920px){body{max-width:1024px}}footer,header{display:flex;justify-content:space-between;align-items:center;margin-block:1rem;padding-block:.25rem;border-block:1px solid var(--surf-3)}hgroup p{font-size:1.063rem}.demo{text-align:center;list-style:none;--pl:0}.demo *{padding-block:.5rem}</style>
+<link rel="icon" href="/Startup-CSS/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+<strong>Startup-CSS | Phil Brown</strong>
+<button aria-label="Dark mode" aria-pressed="false" title="Toggle themes"><span class="hidden">Themes</span></button>
+</header>
+<main id="main">
+<hgroup>
+<h1>Startup-CSS demo page</h1>
+<p>This page provides a rough demonstration of Startup-CSS, see the <a href="https://github.com/pmbrown/Startup-CSS">page repository</a> to view the compiled assets and source files.</p>
+</hgroup>
+<h2>Base styles</h2>
+<p>Colors used are integrated with light and dark mode variables included. The manual icon button styles and script used in the header above are also provided with the assets.</p>
+<details>
+<summary>Typography</summary>
+
+<h1>h1. Heading 1</h1>
+<p>The quick brown fox jumps over the lazy dog so it can leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+<h2>h1. Heading 2</h2>
+<p>The quick brown fox jumps over the lazy dog so it can leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+<h3>h1. Heading 3</h3>
+<p>The quick brown fox jumps over the lazy dog so it can leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+<h4>h1. Heading 4</h4>
+<p>The quick brown fox jumps over the lazy dog so it can leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+<h5>h1. Heading 5</h5>
+<p>The quick brown fox jumps over the lazy dog so it can leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+<h6>h1. Heading 6</h6>
+<p>The quick brown fox jumps over the lazy dog so it can leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+
+
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ol>
+
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ul>
+
+<dl>
+<dt>First term</dt>
+<dd>First definition</dd>
+<dt>Second term</dt>
+<dd>Second definition</dd>
+</dl>
+
+<abbr title="Abbreviation">Abbr</abbr>
+
+<p><strong>The</strong> <em>quick</em> <sup>(1)</sup> <strong><em>brown</em></strong> <sub>(2)</sub> <del>fox</del> <mark>jumps</mark> <small>over</small> <kbd>the</kbd> <kbd><kbd>lazy</kbd></kbd> <code>dog</code>.</p>
+
+<blockquote>
+<p><q cite="http://example.com">Blockquote with author and citation.</q></p>
+<small>&mdash; Editor <em>Daily Blog</em></small>
+</blockquote>
+
+<details>
+<summary>Details summary</summary>
+<p>Details content</p>
+</details>
+
+<pre tabindex="0">
+<code>Code</code>
+</pre>
+
+<figure class="figure" style="max-width: 20rem;">
+  <img src="photo.jpg" alt="Stock photograph of laptop computer">
+  <figcaption>Figure caption: Stock photograph.</figcaption>
+</figure>
+
+</details>
+<details>
+<summary>Forms</summary>
+<form action="#" class="grid g-1-sm g-2 gap-2" style="--mb: .5rem;">
+<fieldset class="grid g-1 gap-1">
+<legend>Fieldset legend</legend>
+
+<div>
+<label for="text-input" class="vis-hidden">Text:</label>
+<input type="text" name="text-input" id="text-input" placeholder="Text" aria-label="Text field">
+</div>
+<div>
+<label for="email-input" class="vis-hidden">Email:</label>
+<input type="email" name="email-input" id="email-input" placeholder="Email" aria-label="Email address">
+</div>
+<div>
+<label for="url-input" class="vis-hidden">URL:</label>
+<input type="url" name="url-input" id="url-input" placeholder="URL" aria-label="URL address">
+</div>
+<div>
+<label for="text-area" class="vis-hidden">Text area</label>
+<textarea name="text-area" id="text-area" placeholder="Text area" aria-label="Text area"></textarea>
+</div>
+<div>
+<label for="search" class="vis-hidden">Search</label>
+<input type="search" name="search" id="search" placeholder="Search">
+</div>
+<div>
+<label for="telephone" class="vis-hidden">Telephone</label>
+<input type="tel" name="telephone" id="telephone" placeholder="Telephone">
+</div>
+<div>
+<label for="numbers" class="vis-hidden">Numbers</label>
+<input type="number" name="numbers" id="numbers" placeholder="Numbers">
+</div>
+<div>
+<label for="password" class="vis-hidden">Password</label>
+<input type="password" name="password" id="password" placeholder="Password">
+</div>
+<div>
+<label for="select-list" class="vis-hidden">Select list</label>
+<select name="select-list" id="select-list">
+<option value="">Select list</option>
+<option value="1">Option 1</option>
+<option value="2">Option 2</option>
+<option value="3">Option 3</option>
+<option value="4">Option 4</option>
+<option value="5">Option 5</option>
+</select>
+</div>
+<div>
+<label for="option-group" class="vis-hidden">Option group</label>
+<select id="option-group">
+<optgroup label="Group one">
+<option>Option 1</option>
+<option>Option 2</option>
+<option>Option 3</option>
+</optgroup>
+<optgroup label="Group two">
+<option>Option 1</option>
+<option>Option 2</option>
+<option>Option 3</option>
+</optgroup>
+</select>
+</div>
+<div>
+<label for="dataList1" class="vis-hidden">Datalist</label>
+<input list="datalistOption" name="datalist1" id="dataList1" placeholder="Datalist search...">
+<datalist id="datalistOption">
+<option value="A Option">
+<option value="B Option">
+<option value="C Option">
+</datalist>
+</div>
+
+</fieldset>
+
+<fieldset class="grid g-1 gap-1">
+<legend>Fieldset legend</legend>
+
+<div>
+<input type="radio" name="radio1" id="radio1" value="1">
+<label for="radio1">Radio default</label><br>
+<input type="radio" name="radio2" id="radio2" value="2" checked> 
+<label for="radio2">Radio checked</label><br>
+<input type="radio" name="radio3" id="radio3" value="3" disabled> 
+<label for="radio3">Radio disabled</label><br>
+<input type="checkbox" name="checkbox1" id="checkbox1" value="1">
+<label for="checkbox1">Checkbox default</label><br>
+<input type="checkbox" name="checkbox2" id="checkbox2" value="2" checked>
+<label for="checkbox2">Checkbox checked</label><br>
+<input type="checkbox" name="checkbox3" id="checkbox3" value="3" disabled>
+<label for="checkbox3">Checkbox disabled</label>
+</div>
+<div>
+<label for="time" class="vis-hidden">Time</label>
+<input type="time" name="time" id="time">
+</div>
+<div>
+<label for="week" class="vis-hidden">Week</label>
+<input type="week" name="week" id="week">
+</div>
+<div>
+<label for="month" class="vis-hidden">Month</label> 
+<input type="month" name="month" id="month">
+</div>
+<div>
+<label for="date" class="vis-hidden">Date</label>             
+<input type="date" name="date" id="date">
+</div>
+<div> 
+<label for="datetime-local" class="vis-hidden">Date and time local</label>   
+<input type="datetime-local" name="datetime-local" id="datetime-local"> 
+</div>
+<div>
+<label for="color" class="vis-hidden">Color select</label>
+<input type="color" name="color" id="color">
+</div>
+<div>
+<label for="range" class="vis-hidden">Range</label>
+<input type="range" name="range" id="range">
+</div>
+</fieldset>
+
+</form>
+</details>
+<details>
+<summary>Buttons</summary>
+
+<div style="margin-bottom: 1rem;">
+<button>Button</button>
+<a href="#" role="button">Role</a>
+<a href="#" class="btn">.btn</a>
+<input type="button" value="Input">
+<input class="red" type="reset" value="Reset">
+<input class="blue" type="submit" value="Submit">
+</div>
+
+
+
+</details>
+<details>
+<summary>Tables</summary>
+<table>
+<caption>Table 1: Plain table, no wrapper</caption>
+<thead>
+<tr>
+<th scope="col">Section</th>
+<th scope="col">Floor</th>
+<th scope="col">Extension</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <td>Management</td>
+  <td>5th</td>
+  <td>#555321</td>
+  </tr>
+  <tr>
+  <td>Accounting</td>
+  <td>4th</td>
+  <td>#444321</td>
+  </tr>
+  <tr>
+  <td>Marketing</td>
+  <td>3rd</td>
+  <td>#333321</td>
+  </tr>
+  <tr>
+  <td>IT helpdesk</td>
+  <td>2nd</td>
+  <td>#222321</td>
+  </tr>
+  <tr>
+  <td>Mailroom</td>
+  <td>1st</td>
+  <td>#111321</td>
+  </tr>
+  <tr>
+  <td>Shop front</td>
+  <td>Ground</td>
+  <td>#000321</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table-hover">
+<caption>Table 2: Row hover table, no wrapper</caption>
+<thead>
+<tr>
+<th scope="col">Section</th>
+<th scope="col">Floor</th>
+<th scope="col">Extension</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <td>Management</td>
+  <td>5th</td>
+  <td>#555321</td>
+  </tr>
+  <tr>
+  <td>Accounting</td>
+  <td>4th</td>
+  <td>#444321</td>
+  </tr>
+  <tr>
+  <td>Marketing</td>
+  <td>3rd</td>
+  <td>#333321</td>
+  </tr>
+  <tr>
+  <td>IT helpdesk</td>
+  <td>2nd</td>
+  <td>#222321</td>
+  </tr>
+  <tr>
+  <td>Mailroom</td>
+  <td>1st</td>
+  <td>#111321</td>
+  </tr>
+  <tr>
+  <td>Shop front</td>
+  <td>Ground</td>
+  <td>#000321</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table-striped">
+<caption>Table 3: Striped row table, no wrapper</caption>
+<thead>
+<tr>
+<th scope="col">Section</th>
+<th scope="col">Floor</th>
+<th scope="col">Extension</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <td>Management</td>
+  <td>5th</td>
+  <td>#555321</td>
+  </tr>
+  <tr>
+  <td>Accounting</td>
+  <td>4th</td>
+  <td>#444321</td>
+  </tr>
+  <tr>
+  <td>Marketing</td>
+  <td>3rd</td>
+  <td>#333321</td>
+  </tr>
+  <tr>
+  <td>IT helpdesk</td>
+  <td>2nd</td>
+  <td>#222321</td>
+  </tr>
+  <tr>
+  <td>Mailroom</td>
+  <td>1st</td>
+  <td>#111321</td>
+  </tr>
+  <tr>
+  <td>Shop front</td>
+  <td>Ground</td>
+  <td>#000321</td>
+  </tr>
+</tbody>
+</table>
+
+<div tabindex="0" role="region" aria-labelledby="Caption1">
+<table class="table-combo">
+<caption id="Caption1">Table 4: Combined striped and hover table contained within accessible wrapper class for horizontal scrolling on small devices.</caption>
+<thead>
+<tr>
+<th scope="col">Section</th>
+<th scope="col">Location</th>
+<th scope="col">Extension</th>
+<th scope="col">Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Management</td>
+<td>7th floor</td>
+<td>#111321</td>
+<td><a href="#">management@example.com</a></td>
+</tr>
+<tr>
+<td>Accounting</td>
+<td>6th floor</td>
+<td>#222321</td>
+<td><a href="#">accounting@example.com</a></td>
+</tr>
+<tr>
+<td>HR department</td>
+<td>5th floor</td>
+<td>#333321</td>
+<td><a href="#">humanrelations@example.com</a></td>
+</tr>
+<tr>
+<td>Marketing and public relations</td>
+<td>4th floor</td>
+<td>#444321</td>
+<td><a href="#">marketing@example.com</a></td>
+</tr>
+<tr>
+<td>Web and social media</td>
+<td>3rd floor</td>
+<td>#444321</td>
+<td><a href="#">web@example.com</a></td>
+</tr>
+<tr>
+<td>IT helpdesk</td>
+<td>2nd floor</td>
+<td>#555321</td>
+<td><a href="#">ithelpdesk@example.com</a></td>
+</tr>
+<tr>
+<td>Mailroom</td>
+<td>1st floor</td>
+<td>#666321</td>
+<td><a href="#">mailroom@example.com</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+</details>
+<h2>Optional utilities</h2>
+<p>A 12 column checkerboard CSS grid is included, the Icons and Colors examples below use it demonstrating basic usage, as the does the Forms example above.</p>
+<details>
+<summary>Icons</summary>
+<ul class="grid g-3-sm g-6 gap-2 demo" style="--fs: 2rem;">
+<li class="ico-block home">.home</li>
+<li class="ico-block email">.email</li>
+<li class="ico-block newtab">.newtab</li>
+<li class="ico-block bars">.bars</li>
+<li class="ico-block sun">.sun</li>
+<li class="ico-block moon">.moon</li>
+<li class="ico-block arrowup">.arrowup</li>
+<li class="ico-block arrowdown">.arrowdown</li>
+<li class="ico-block arrowleft">.arrowleft</li>
+<li class="ico-block arrowright">.arrowright</li>
+<li class="ico-block plus">.plus</li>
+<li class="ico-block minus">.minus</li>
+</ul>
+</details>
+<details>
+<summary>Colors</summary>
+<ul class="grid g-5 demo">
+<li class="bg blue-1">.blue-1</li>
+<li class="bg blue-2">.blue-2</li>
+<li class="bg blue-3">.blue-3</li>
+<li class="bg blue-4">.blue-4</li>
+<li class="bg blue-5">.blue-5</li>
+
+<li class="bg green-1">.green-1</li>
+<li class="bg green-2">.green-2</li>
+<li class="bg green-3">.green-3</li>
+<li class="bg green-4">.green-4</li>
+<li class="bg green-5">.green-5</li>
+
+<li class="bg red-1">.red-1</li>
+<li class="bg red-2">.red-2</li>
+<li class="bg red-3">.red-3</li>
+<li class="bg red-4">.red-4</li>
+<li class="bg red-5">.red-5</li>
+
+<li class="bg yellow-1">.yellow-1</li>
+<li class="bg yellow-2">.yellow-2</li>
+<li class="bg yellow-3">.yellow-3</li>
+<li class="bg yellow-4">.yellow-4</li>
+<li class="bg yellow-5">.yellow-5</li>
+
+<li class="bg orange-1">.orange-1</li>
+<li class="bg orange-2">.orange-2</li>
+<li class="bg orange-3">.orange-3</li>
+<li class="bg orange-4">.orange-4</li>
+<li class="bg orange-5">.orange-5</li>
+
+<li class="bg teal-1">.teal-1</li>
+<li class="bg teal-2">.teal-2</li>
+<li class="bg teal-3">.teal-3</li>
+<li class="bg teal-4">.teal-4</li>
+<li class="bg teal-5">.teal-5</li>
+
+<li class="bg pink-1">.pink-1</li>
+<li class="bg pink-2">.pink-2</li>
+<li class="bg pink-3">.pink-3</li>
+<li class="bg pink-4">.pink-4</li>
+<li class="bg pink-5">.pink-5</li>
+
+<li class="bg cyan-1">.cyan-1</li>
+<li class="bg cyan-2">.cyan-2</li>
+<li class="bg cyan-3">.cyan-3</li>
+<li class="bg cyan-4">.cyan-4</li>
+<li class="bg cyan-5">.cyan-5</li>
+</ul>
+</details>
+
+</main>
+
+<footer>
+<a href="#">Back to top</a>
+&copy; 2023 Phil Brown
+</footer>
+</body>
+</html>

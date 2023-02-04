@@ -1,0 +1,41 @@
+//  ------------------------------------------------------------
+//  Surface color utilities
+//  ------------------------------------------------------------
+
+@import "variables/surface";
+
+.surf-1, .surf-2, .surf-3, .surf-4, .surf-5, .surf-6, .surf-7 {
+  --color: var(--text);
+  --ico-color: var(--color);
+  --focus-hsl: var(--text-hsl);
+}
+
+.surf-1 {
+  @each $surf-1, $value in $surf-1 {
+    #{$surf-1}: #{$value};
+  }
+}
+
+.surf-2 {
+  @each $surf-2, $value in $surf-2 {
+    #{$surf-2}: #{$value};
+  }
+}
+
+.surf-3 {
+  @each $surf-3, $value in $surf-3 {
+    #{$surf-3}: #{$value};
+  }
+}
+
+.surf-4 {
+  @each $surf-4, $value in $surf-4 {
+    #{$surf-4}: #{$value};
+  }
+}
+
+.surf-5 {
+  @each $surf-5, $value in $surf-5 {
+    #{$surf-5}: #{$value};
+  }
+}

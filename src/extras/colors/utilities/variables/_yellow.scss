@@ -1,0 +1,43 @@
+//  ------------------------------------------------------------
+//  Yellow color utilities
+//  ------------------------------------------------------------
+
+$yellow-1: (
+  "--color": #000,
+  "--bg-color": var(--yellow-1),
+  "--border-color": var(--yellow-2),
+  "--bg-hover": var(--yellow-2),
+  "--focus-hsl": var(--yellow),
+) !default;
+
+$yellow-2: (
+  "--color": #000,
+  "--bg-color": var(--yellow-2),
+  "--border-color": var(--yellow-3),
+  "--bg-hover": var(--yellow-1),
+  "--focus-hsl": var(--yellow),
+) !default;
+
+$yellow-3: (
+  "--color": #000,
+  "--bg-color": var(--yellow-3),
+  "--border-color": var(--yellow-4),
+  "--bg-hover": var(--yellow-4),
+  "--focus-hsl": var(--yellow),
+) !default;
+
+$yellow-4: (
+  "--color": #000,
+  "--bg-color": var(--yellow-4),
+  "--border-color": var(--yellow-5),
+  "--bg-hover": var(--yellow-5),
+  "--focus-hsl": var(--yellow),
+) !default;
+
+$yellow-5: (
+  "--color": #000,
+  "--bg-color": var(--yellow-5),
+  "--border-color": var(--yellow-4),
+  "--bg-hover": var(--yellow-4),
+  "--focus-hsl": var(--yellow),
+) !default;

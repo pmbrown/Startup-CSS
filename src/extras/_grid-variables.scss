@@ -1,0 +1,124 @@
+//  ------------------------------------------------------------
+//  Grid variables
+//  ------------------------------------------------------------
+
+// Breakpoints max-width
+$bp320:   321px;
+$bp360:   361px;
+$bp480:   481px;
+$bp576:   577px;
+$bp768:   769px; // Not using 
+$bp800:   801px;
+$bp992:   993px; // Not using
+$bp1024:  1025px;
+$bp1200:  1201px;
+$bp1400:  1401px;
+
+$breakpoints: (
+  "xxxs": $bp320,
+  "xxs": $bp360,
+  "xs": $bp480,
+  "sm": $bp576,
+  "md": $bp800,
+  "lg": $bp1024,
+  "xl": $bp1200,
+  "xxl": $bp1400,
+) !default;
+
+// Fraction widths
+$g-1:   100%;
+$g-2:   repeat(2, 1fr);
+$g-3:   repeat(3, 1fr);
+$g-4:   repeat(4, 1fr);
+$g-5:   repeat(5, 1fr);
+$g-6:   repeat(6, 1fr);
+$g-7:   repeat(7, 1fr);
+$g-8:   repeat(8, 1fr);
+$g-9:   repeat(9, 1fr);
+$g-10:  repeat(10, 1fr);
+$g-11:  repeat(11, 1fr);
+$g-12:  repeat(12, 1fr);
+
+$fraction-grid: (
+  "g-1": $g-1,
+  "g-2": $g-2,
+  "g-3": $g-3,
+  "g-4": $g-4,
+  "g-5": $g-5,
+  "g-6": $g-6,
+  "g-7": $g-7,
+  "g-8": $g-8,
+  "g-9": $g-9,
+  "g-10": $g-10,
+//  "g-11": $g-11,
+//  "g-12": $g-12,
+) !default;
+
+// Gaps
+$gap-0: 0;
+$gap-1: .25rem;
+$gap-2: .5rem;
+$gap-3: 1rem;
+$gap-4: 1.5rem;
+$gap-5: 2rem;
+
+$gaps: (
+  "gap-0": $gap-0,
+  "gap-1": $gap-1,
+  "gap-2": $gap-2,
+  "gap-3": $gap-3,
+  "gap-4": $gap-4,
+  "gap-5": $gap-5,
+) !default;
+
+// Column gaps
+$gap-c-0: 0;
+$gap-c-1: .25rem;
+$gap-c-2: .5rem;
+$gap-c-3: 1rem;
+$gap-c-4: 1.5rem;
+$gap-c-5: 2rem;
+
+$gap-column: (
+  "gap-c-0": $gap-c-0,
+  "gap-c-1": $gap-c-1,
+  "gap-c-2": $gap-c-2,
+  "gap-c-3": $gap-c-3,
+  "gap-c-4": $gap-c-4,
+  "gap-c-5": $gap-c-5,
+) !default;
+
+// Row gaps
+$gap-r-0: 0;
+$gap-r-1: .25rem;
+$gap-r-2: .5rem;
+$gap-r-3: 1rem;
+$gap-r-4: 1.5rem;
+$gap-r-5: 2rem;
+
+$gap-row: (
+  "gap-r-0": $gap-r-0,
+  "gap-r-1": $gap-r-1,
+  "gap-r-2": $gap-r-2,
+  "gap-r-3": $gap-r-3,
+  "gap-r-4": $gap-r-4,
+  "gap-r-5": $gap-r-5,
+) !default;
+
+// Order
+$order-0: 0;
+$order-1: 1;
+$order-2: 2;
+$order-3: 3;
+$order-4: 4;
+$order-5: 5;
+
+$order: (
+  "order-0": $order-0,
+  "order-1": $order-1,
+  "order-2": $order-2,
+  "order-3": $order-3,
+  "order-4": $order-4,
+  "order-5": $order-5,
+) !default;
+ 

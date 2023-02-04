@@ -1,0 +1,225 @@
+//  ------------------------------------------------------------
+//  Mono color utilities
+//  ------------------------------------------------------------
+
+:where(.white) {
+  --color: #000;
+  --bg-color: #fff;
+  --border-color: var(--gray-2);
+  --ico-color: var(--color);
+  --bg-hover: var(--gray-1);
+  --focus-hsl: var(--text-hsl);
+}
+
+:where(.black) {
+  --color: #fff;
+  --bg-color: #000;
+  --border-color: var(--gray-10);
+  --ico-color: var(--color);
+  --bg-hover: var(--gray-11);
+  --focus-hsl: var(--text-hsl);
+}
+
+$gray-1-color:          #000 !default;
+$gray-1-bg-color:       var(--gray-1) !default;
+$gray-1-ico-color:      var(--color) !default;
+$gray-1-border-color:   var(--gray-2) !default;
+$gray-1-color-hover:    var(--color) !default;
+$gray-1-bg-hover:       var(--gray-2) !default;
+$gray-1-color-focus:    var(--color) !default;
+$gray-1-bg-focus:       var(--gray-1) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+ 
+$gray-1: (
+  "--color": #{$gray-1-color},
+  "--bg-color": #{$gray-1-bg-color},
+  "--border-color": #{$gray-1-border-color},
+  "--bg-hover": #{$gray-1-bg-hover},
+) !default;
+
+$gray-2-color:          #000 !default;
+$gray-2-bg-color:       var(--gray-2) !default;
+$gray-2-ico-color:      var(--color) !default;
+$gray-2-border-color:   var(--gray-3) !default;
+$gray-2-color-hover:    var(--color) !default;
+$gray-2-bg-hover:       var(--gray-3) !default;
+$gray-2-color-focus:    var(--color) !default;
+$gray-2-bg-focus:       var(--gray-4) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-2: (
+  "--color": #{$gray-2-color},
+  "--bg-color": #{$gray-2-bg-color},
+  "--border-color": #{$gray-2-border-color},
+  "--bg-hover": #{$gray-2-bg-hover},  
+) !default;
+
+$gray-3-color:          #000 !default;
+$gray-3-bg-color:       var(--gray-3) !default;
+$gray-3-ico-color:      var(--color) !default;
+$gray-3-border-color:   var(--gray-4) !default;
+$gray-3-color-hover:    var(--color) !default;
+$gray-3-bg-hover:       var(--gray-4) !default;
+$gray-3-color-focus:    var(--color) !default;
+$gray-3-bg-focus:       var(--gray-5) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-3: (
+  "--color": #{$gray-3-color},
+  "--bg-color": #{$gray-3-bg-color},
+  "--border-color": #{$gray-3-border-color},
+  "--bg-hover": #{$gray-3-bg-hover},
+) !default;
+
+$gray-4-color:          #000 !default;
+$gray-4-bg-color:       var(--gray-4) !default;
+$gray-4-ico-color:      var(--color) !default;
+$gray-4-border-color:   var(--gray-5) !default;
+$gray-4-color-hover:    var(--color) !default;
+$gray-4-bg-hover:       var(--gray-5) !default;
+$gray-4-color-focus:    var(--color) !default;
+$gray-4-bg-focus:       var(--gray-6) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-4: (
+  "--color": #{$gray-4-color},
+  "--bg-color": #{$gray-4-bg-color},
+  "--border-color": #{$gray-4-border-color},
+  "--bg-hover": #{$gray-4-bg-hover},  
+) !default;
+
+$gray-5-color:          #000 !default;
+$gray-5-bg-color:       var(--gray-5) !default;
+$gray-5-ico-color:      var(--color) !default;
+$gray-5-border-color:   var(--gray-6) !default;
+$gray-5-color-hover:    var(--color) !default;
+$gray-5-bg-hover:       var(--gray-6) !default;
+$gray-5-color-focus:    var(--color) !default;
+$gray-5-bg-focus:       var(--gray-4) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-5: (
+  "--color": #{$gray-5-color},
+  "--bg-color": #{$gray-5-bg-color},
+  "--border-color": #{$gray-5-border-color},
+  "--bg-hover": #{$gray-5-bg-hover},  
+) !default;
+
+$gray-6-color:          #000 !default;
+$gray-6-bg-color:       var(--gray-6) !default;
+$gray-6-ico-color:      var(--color) !default;
+$gray-6-border-color:   var(--gray-5) !default;
+$gray-6-color-hover:    var(--color) !default;
+$gray-6-bg-hover:       var(--gray-5) !default;
+$gray-6-color-focus:    var(--color) !default;
+$gray-6-bg-focus:       var(--gray-4) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-6: (
+  "--color": #{$gray-6-color},
+  "--bg-color": #{$gray-6-bg-color},
+  "--border-color": #{$gray-6-border-color},
+  "--bg-hover": #{$gray-6-bg-hover},  
+) !default;
+
+$gray-7-color:          #fff !default;
+$gray-7-bg-color:       var(--gray-7) !default;
+$gray-7-ico-color:      var(--color) !default;
+$gray-7-border-color:   var(--gray-8) !default;
+$gray-7-color-hover:    var(--color) !default;
+$gray-7-bg-hover:       var(--gray-8) !default;
+$gray-7-color-focus:    var(--color) !default;
+$gray-7-bg-focus:       var(--gray-9) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-7: (
+  "--color": #{$gray-7-color},
+  "--bg-color": #{$gray-7-bg-color},
+  "--border-color": #{$gray-7-border-color},
+  "--bg-hover": #{$gray-7-bg-hover},  
+) !default;
+
+$gray-8-color:          #fff !default;
+$gray-8-bg-color:       var(--gray-8) !default;
+$gray-8-ico-color:      var(--color) !default;
+$gray-8-border-color:   var(--gray-9) !default;
+$gray-8-color-hover:    var(--color) !default;
+$gray-8-bg-hover:       var(--gray-9) !default;
+$gray-8-color-focus:    var(--color) !default;
+$gray-8-bg-focus:       var(--gray-7) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-8: (
+  "--color": #{$gray-8-color},
+  "--bg-color": #{$gray-8-bg-color},
+  "--border-color": #{$gray-8-border-color},
+  "--bg-hover": #{$gray-8-bg-hover},  
+) !default;
+
+$gray-9-color:          #fff !default;
+$gray-9-bg-color:       var(--gray-9) !default;
+$gray-9-ico-color:      var(--color) !default;
+$gray-9-border-color:   var(--gray-10) !default;
+$gray-9-color-hover:    var(--color) !default;
+$gray-9-bg-hover:       var(--gray-10) !default;
+$gray-9-color-focus:    var(--color) !default;
+$gray-9-bg-focus:       var(--gray-8) !default;
+$gray-focus-hsl:        var(--text-hsl) !default;
+
+$gray-9: (
+  "--color": #{$gray-9-color},
+  "--bg-color": #{$gray-9-bg-color},
+  "--border-color": #{$gray-9-border-color},
+  "--bg-hover": #{$gray-9-bg-hover}, 
+) !default;
+
+$gray-10-color:          #fff !default;
+$gray-10-bg-color:       var(--gray-10) !default;
+$gray-10-ico-color:      var(--color) !default;
+$gray-10-border-color:   var(--gray-9) !default;
+$gray-10-color-hover:    var(--color) !default;
+$gray-10-bg-hover:       var(--gray-9) !default;
+$gray-10-color-focus:    var(--color) !default;
+$gray-10-bg-focus:       var(--gray-8) !default;
+$gray-focus-hsl:         var(--text-hsl) !default;
+
+$gray-10: (
+  "--color": #{$gray-10-color},
+  "--bg-color": #{$gray-10-bg-color},
+  "--border-color": #{$gray-10-border-color},
+  "--bg-hover": #{$gray-10-bg-hover}, 
+) !default;
+
+$gray-11-color:          #fff !default;
+$gray-11-bg-color:       var(--gray-11) !default;
+$gray-11-ico-color:      var(--color) !default;
+$gray-11-border-color:   var(--gray-10) !default;
+$gray-11-color-hover:    var(--color) !default;
+$gray-11-bg-hover:       var(--gray-10) !default;
+$gray-11-color-focus:    var(--color) !default;
+$gray-11-bg-focus:       var(--gray-9) !default;
+$gray-focus-hsl:         var(--text-hsl) !default;
+
+$gray-11: (
+  "--color": #{$gray-11-color},
+  "--bg-color": #{$gray-11-bg-color},
+  "--border-color": #{$gray-11-border-color},
+  "--bg-hover": #{$gray-11-bg-hover},  
+) !default;
+
+$gray-12-color:          #fff !default;
+$gray-12-bg-color:       var(--gray-12) !default;
+$gray-12-ico-color:      var(--color) !default;
+$gray-12-border-color:   var(--gray-11) !default;
+$gray-12-color-hover:    var(--color) !default;
+$gray-12-bg-hover:       var(--gray-11) !default;
+$gray-12-color-focus:    var(--color) !default;
+$gray-12-bg-focus:       var(--gray-10) !default;
+$gray-focus-hsl:         var(--text-hsl) !default;
+
+$gray-12: (
+  "--color": #{$gray-12-color},
+  "--bg-color": #{$gray-12-bg-color},
+  "--border-color": #{$gray-12-border-color},
+  "--bg-hover": #{$gray-12-bg-hover}, 
+) !default;

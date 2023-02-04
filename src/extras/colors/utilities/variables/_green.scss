@@ -1,0 +1,43 @@
+//  ------------------------------------------------------------
+// Green color utilities
+//  ------------------------------------------------------------
+
+$green-1: (
+  "--color": #000,
+  "--bg-color": var(--green-1),
+  "--border-color": var(--green-2),
+  "--bg-hover": var(--green-2),
+  "--focus-hsl": var(--green),
+) !default;
+
+$green-2: (
+  "--color": #000,
+  "--bg-color": var(--green-2),
+  "--border-color": var(--green-3),
+  "--bg-hover": var(--green-1),
+  "--focus-hsl": var(--green),
+) !default;
+
+$green-3: (
+  "--color": #fff,
+  "--bg-color": var(--green-3),
+  "--border-color": var(--green-4),
+  "--bg-hover": var(--green-4),
+  "--focus-hsl": var(--green),
+) !default;
+
+$green-4: (
+  "--color": #fff,
+  "--bg-color": var(--green-4),
+  "--border-color": var(--green-5),
+  "--bg-hover": var(--green-5),
+  "--focus-hsl": var(--green),
+) !default;
+
+$green-5: (
+  "--color": #fff,
+  "--bg-color": var(--green-5),
+  "--border-color": var(--green-4),
+  "--bg-hover": var(--green-4),
+  "--focus-hsl": var(--green),
+) !default;

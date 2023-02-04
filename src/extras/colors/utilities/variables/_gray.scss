@@ -1,0 +1,87 @@
+//  ------------------------------------------------------------
+//  Gray color utilities
+//  ------------------------------------------------------------
+ 
+$gray-1: (
+  "--color": #000,
+  "--bg-color": var(--gray-1),
+  "--border-color": var(--gray-2),
+  "--bg-hover": var(--gray-2),
+) !default;
+
+$gray-2: (
+  "--color": #000,
+  "--bg-color": var(--gray-2),
+  "--border-color": var(--gray-3),
+  "--bg-hover": var(--gray-3),
+) !default;
+
+$gray-3: (
+  "--color": #000,
+  "--bg-color": var(--gray-3),
+  "--border-color": var(--gray-4),
+  "--bg-hover": var(--gray-4),
+) !default;
+
+$gray-4: (
+  "--color": #000,
+  "--bg-color": var(--gray-4),
+  "--border-color": var(--gray-5),
+  "--bg-hover": var(--gray-5),
+) !default;
+
+$gray-5: (
+  "--color": #000,
+  "--bg-color": var(--gray-5),
+  "--border-color": var(--gray-6),
+  "--bg-hover": var(--gray-6),
+) !default;
+
+$gray-6: (
+  "--color": #000,
+  "--bg-color": var(--gray-6),
+  "--border-color": var(--gray-7),
+  "--bg-hover": var(--gray-5),
+) !default;
+
+$gray-7: (
+  "--color": #fff,
+  "--bg-color": var(--gray-7),
+  "--border-color": var(--gray-8),
+  "--bg-hover": var(--gray-8),
+) !default;
+
+$gray-8: (
+  "--color": #fff,
+  "--bg-color": var(--gray-8),
+  "--border-color": var(--gray-9),
+  "--bg-hover": var(--gray-9),
+) !default;
+
+$gray-9: (
+  "--color": #fff,
+  "--bg-color": var(--gray-9),
+  "--border-color": var(--gray-10),
+  "--bg-hover": var(--gray-10),
+) !default;
+
+$gray-10: (
+  "--color": #fff,
+  "--bg-color": var(--gray-10),
+  "--border-color": var(--gray-11),
+  "--bg-hover": var(--gray-9),
+) !default;
+
+$gray-11: (
+  "--color": #fff,
+  "--bg-color": var(--gray-11),
+  "--border-color": var(--gray-10),
+  "--bg-hover": var(--gray-10),
+) !default;
+
+$gray-12: (
+  "--color": #fff,
+  "--bg-color": var(--gray-12),
+  "--border-color": var(--gray-11),
+  "--bg-hover": var(--gray-11),
+) !default;
