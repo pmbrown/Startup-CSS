@@ -15,16 +15,15 @@
 </head>
 <body>
 <header>
-<strong>Startup-CSS | Phil Brown</strong>
+<strong><a href="https://github.com/pmbrown">Phil Brown</a></strong>
 <button aria-label="Dark mode" aria-pressed="false" title="Toggle themes"><span class="hidden">Themes</span></button>
 </header>
 <main id="main">
 <hgroup>
 <h1>Startup-CSS demo page</h1>
-<p>This page provides a rough demonstration of Startup-CSS, see the <a href="https://github.com/pmbrown/Startup-CSS">page repository</a> to view the compiled assets and source files.</p>
+<p>Startup-CSS is an opinionated style sheet providing basic property values for typography, forms, buttons and tables, with light and dark mode color schemes integrated into the styles, and utilities for icons, primary colors and a CSS grid.</p>
 </hgroup>
-<h2>Base styles</h2>
-<p>Colors used are integrated with light and dark mode variables included. The manual icon button styles and script used in the header above are also provided with the assets.</p>
+<p>The examples below provide a rough demonstration of the styles, basic usage of the CSS grid is demonstrated in the Forms, Icons and Colors examples.</p>
 <details>
 <summary>Typography</summary>
 
@@ -419,8 +418,6 @@
 
 
 </details>
-<h2>Optional utilities</h2>
-<p>A 12 column checkerboard CSS grid is included, the Icons and Colors examples below use it demonstrating basic usage, as the does the Forms example above.</p>
 <details>
 <summary>Icons</summary>
 <ul class="grid g-3-sm g-6 gap-2 demo" style="--fs: 2rem;">
@@ -490,12 +487,15 @@
 <li class="bg cyan-5">.cyan-5</li>
 </ul>
 </details>
+<h2>Assets and source files</h2>
+<p>Source files are Sass but the styles are all written as regular CSS, the color and grid utilities differ as they use Sass maps to generate the styles.</p>
+<p><a href="https://github.com/pmbrown/Startup-CSS" class="btn blue ico-a arrowright">Startup-CSS files</a></p>
 
 </main>
 
 <footer>
+<span>&copy; 2023 <a href="https://github.com/pmbrown">Phil Brown</a></span>
 <a href="#">Back to top</a>
-&copy; 2023 Phil Brown
 </footer>
 </body>
 </html>
