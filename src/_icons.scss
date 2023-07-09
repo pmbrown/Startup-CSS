@@ -99,12 +99,14 @@ $icons: (
   background-color: var(--bg-color, var(--ico-color));
 }
  
-:where(.ico-a, .ico-a-col):after { 
-  margin-inline-start: calc(var(--fs) / 5);
+:where(.ico-a, .ico-a-col):after {
+  --ml: calc(var(--fs) / 5)
+  margin-inline-start: var(--ml);
 }
 
-:where(.ico-b, .ico-b-col):before { 
-  margin-inline-end: calc(var(--fs) / 4.75); 
+:where(.ico-b, .ico-b-col):before {
+  --mr: calc(var(--fs) / 4.75);
+  margin-inline-end: var(--mr); 
 }
 
 :where(.ico-block, .ico-block-col):before { 
